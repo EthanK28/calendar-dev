@@ -12,7 +12,8 @@
 
 	<context:component-scan base-package="com.mycompany.myapp" />
 
-	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
+	<!-- <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/> -->
+	<tx:annotation-driven proxy-target-class="true" />
 	
 	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
     	<property name="dataSource" ref="dataSource" />
@@ -23,5 +24,9 @@
 		<property name="url" value="jdbc:mysql://localhost/calendar?characterEncoding=UTF-8" />
 		<property name="username" value="spring" />
 		<property name="password" value="book" />
+	</bean>
+	
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource" />
 	</bean>
 </beans>

@@ -34,7 +34,7 @@
 	    </li>
 	    <li><a id="myEventsLink" href="events/my">나의 이벤트</a> - 로그인한 유저가 생성한 이벤트와 참여하는 이벤트 목록을 보여줍니다.</li>
 	    <li><a id="createEventLink" href="events/form">이벤트 생성</a> - 로그인한 유저가 새로운 이벤트를 생성합니다.</li>
-	    <li><a id="signupLink" href="users/signup">회원 가입</a> - 회원 가입을 합니다.</li>
+	    <li><a id="signupLink" href="admin/registration">회원 가입</a> - 회원 가입을 합니다.</li>
 	    <li><a id="signinLink" href="users/signin">로그인</a> - 로그인을 합니다.</li>
 	</ul>
 <jsp:include page="./includes/footer.jsp"/>
