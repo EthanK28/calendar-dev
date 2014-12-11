@@ -4,10 +4,10 @@ public class UserRole {
 	int id;
 	String userId;
 	String role;
-	
+
 	public UserRole() {
 	}
-	
+
 	public UserRole(String userId, String role) {
 		super();
 		this.userId = userId;

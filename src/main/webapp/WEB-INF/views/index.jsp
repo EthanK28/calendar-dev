@@ -37,6 +37,7 @@
 	    <li><a id="signupLink" href="admin/registration">회원 가입</a> - 회원 가입을 합니다.</li>
 	    <li><a id="signinLink" href="users/signin">로그인</a> - 로그인을 합니다.</li>
 	</ul>
+	
 <jsp:include page="./includes/footer.jsp"/>
 </div>
 </body>

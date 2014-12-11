@@ -43,23 +43,24 @@ public class AdminController {
         return mav;
     }
 	
-	/*
+	
      
-    @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public String processRegistration(@ModelAttribute("userForm") User user, Model model) {
+    @RequestMapping(value = "/signin", method = RequestMethod.POST)
+    public ModelAndView processRegistration(@ModelAttribute("userForm") CalendarUser user, ModelAndView mav) {
          
-        this.userService.add(user);
+        this.userService.createUser(user);
          
         // for testing purpose:
         System.out.println("id: " + user.getId());
         System.out.println("name: " + user.getName());
         System.out.println("password: " + user.getPassword());
         System.out.println("email: " + user.getEmail());
-        System.out.println("profession: " + user.getProfession());
-         
-        return "admin/registrationSuccess";
+        //System.out.println("profession: " + user.getProfession());
+        mav.setViewName("signin");
+        return mav;
     }
     
+    /*
 	@RequestMapping(value = "/allUsers", method = RequestMethod.GET)
 	public String allUsers(Locale locale, Model model) {
 		List<User> users = this.userService.getAll();
