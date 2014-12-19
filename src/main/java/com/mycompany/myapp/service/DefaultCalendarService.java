@@ -18,6 +18,7 @@ import com.mycompany.myapp.domain.EventAttendee;
 import com.mycompany.myapp.domain.EventLevel;
 
 
+
 @Service("calendarService")
 @Transactional
 public class DefaultCalendarService implements CalendarService {
@@ -120,7 +121,12 @@ public class DefaultCalendarService implements CalendarService {
 		eventAttendeeDao.deleteAll();
 	}
 
-
+	/*
+	@Override
+	@Transactional(readOnly=true)
+	public CalendarUser get(String id) {
+		return this.userDao.get(id);
+	}*/
 
 	/* upgradeEventLevels */
 	@Override

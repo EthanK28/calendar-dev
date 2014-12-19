@@ -6,7 +6,6 @@
 <title>Registration</title>
 </head>
 <body>
-<jsp:include page="./includes/header.jsp"/>
     <div align="center">
         <form:form action="register" method="post" commandName="userForm">
             <table border="0">
@@ -35,6 +34,5 @@
             </table>
         </form:form>
     </div>
-<jsp:include page="./includes/footer.jsp"/>
 </body>
 </html>

@@ -39,6 +39,15 @@ public class JdbcCalendarUserDao implements CalendarUserDao {
 			}
 		};
 	}
+	
+	/*
+	@Autowired
+	public CalendarUser get(String id) {
+		return this.jdbcTemplate.queryForObject("select * from calendarusers where id = ?",
+				new Object[] {id}, this.rowMapper);
+	} */
+
+	
 
 	@Autowired
 	public void setDataSource(DataSource dataSource){

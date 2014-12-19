@@ -13,6 +13,8 @@ public interface CalendarUserDao {
 
     public int createUser(CalendarUser user);
     
+    //public CalendarUser get(String id);
+    
     public List<CalendarUser> findAllusers();
     
     public void deleteAll();

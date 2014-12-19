@@ -1,10 +1,13 @@
 package com.mycompany.myapp.domain;
 
+
+
 public class CalendarUser {
 	private Integer id;
 	private String email;
 	private String password;
 	private String name;
+	
 
 	public Integer getId() {
 		return id;
@@ -37,6 +40,8 @@ public class CalendarUser {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+
 
 	@Override
 	public int hashCode() {
