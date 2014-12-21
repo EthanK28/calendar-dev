@@ -17,10 +17,6 @@
                 </td>
             </tr>
             <tr>
-                <td>User ID:</td>
-                <td>${userForm.id}</td>
-            </tr>
-            <tr>
                 <td>User Name:</td>
                 <td>${userForm.name}</td>
             </tr>

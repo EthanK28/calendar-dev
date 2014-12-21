@@ -16,6 +16,7 @@ import com.mycompany.myapp.domain.CalendarUser;
 import com.mycompany.myapp.domain.Event;
 import com.mycompany.myapp.domain.EventAttendee;
 import com.mycompany.myapp.domain.EventLevel;
+import com.mycompany.myapp.dao.UserRoleDao;
 
 
 
@@ -32,6 +33,9 @@ public class DefaultCalendarService implements CalendarService {
 
 	@Autowired
 	private EventAttendeeDao eventAttendeeDao;
+	
+	@Autowired
+	private UserRoleDao userRoleDao;
 
 	public void setEventDao(EventDao eventDao) {
 		this.eventDao = eventDao;
@@ -119,6 +123,13 @@ public class DefaultCalendarService implements CalendarService {
 	@Override
 	public void deleteAllEventAttendees() {
 		eventAttendeeDao.deleteAll();
+	}
+	
+	/* RoleDaoService */
+	
+	@Autowired
+	public void setUserRoleDao(UserRoleDao userRoleDao) {
+		this.userRoleDao = userRoleDao;
 	}
 
 	/*

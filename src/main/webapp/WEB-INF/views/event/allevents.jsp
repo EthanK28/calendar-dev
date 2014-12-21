@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <c:set var="pageTitle" value="Welcome to myCalendar!" scope="request" />
 <html>
@@ -41,7 +42,7 @@
 						<%-- <fmt:formatDate value="${event.when}" type="date" dateStyle="short" /> --%>
 						<tr class="info">
 							<td>${event.id}</td>
-							<td><fmt:formatDate value="${event.when.time}" type="date"dateStyle="full" /></td>
+							<td><fmt:formatDate value="${event.when.time}" type="date" dateStyle="full" /></td>
 							<td>${event.summary}</td>
 							<td>${event.description}</td>
 							<td>${event.owner}</td>

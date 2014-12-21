@@ -24,7 +24,7 @@
 	<div class="container">
 		<jsp:include page="./includes/header.jsp" />
 
-		<h1 style="text-align:center;'">로그인</h1>
+		<h1 style="text-align:center;">로그인 처리</h1>
 
 		<div id="login-box">
 

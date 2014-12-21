@@ -55,7 +55,7 @@ public class AdminController {
         System.out.println("name: " + user.getName());
         System.out.println("password: " + user.getPassword());
         System.out.println("email: " + user.getEmail());
-        //System.out.println("profession: " + user.getProfession());
+        
         mav.setViewName("/registration/registrationSuccess");
         return mav;
     }
@@ -76,6 +76,8 @@ public class AdminController {
 	  model.setViewName("myinfo");
 	  return model;
  	}
+	
+	
     
     /*
 	@RequestMapping(value = "/allUsers", method = RequestMethod.GET)

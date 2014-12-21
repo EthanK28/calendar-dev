@@ -25,8 +25,9 @@ public class CalendarUser {
 		return name;
 	}
 
-	public void setId(Integer id) {
+	public CalendarUser setId(Integer id) {
 		this.id = id;
+		return this;
 	}
 
 	public void setEmail(String email) {

@@ -100,6 +100,9 @@ public class JdbcCalendarUserDao implements CalendarUserDao {
     public List<CalendarUser> findAllusers() {
 		String sql_query = "select * from calendar_users";
 		return this.jdbcTemplate.query(sql_query, rowMapper);
+		
+		
+		
     }
 
 	@Override
